@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="weather.controller.Weather">
+  <VBox>
+    <Input id="cityInput" placeholder="Enter City Name" />
+    <Button text="Get Weather" press="onGetWeather" />
+    <Title text="Weather Conditions" />
+    <List id="weatherList">
+      <items>
+        <StandardListItem title="{city}" description="{weather}" />
+      </items>
+    </List>
+    <Title text="Temperature" />
+    <Text id="temperatureText" />
+    <Title text="5-Day Forecast" />
+    <List id="forecastList">
+      <items>
+        <StandardListItem title="{date}" description="{forecast}" />
+      </items>
+    </List>
+  </VBox>
+</mvc:View>
